@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+  <ion-item>
+    <ion-label position="floating">Nombre Completo: </ion-label>
+    <ion-input formControlName="fullName" name="fullName" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password: </ion-label>
+    <ion-input formControlName="password" type="password"></ion-input>
+  </ion-item>
+  <ion-button type="submit" expand="block">
+    Login
+  </ion-button>
+</form>
